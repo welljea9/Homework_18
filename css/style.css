@@ -1,0 +1,140 @@
+body {
+    background-image: url("./../images/background-pic.jpg");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .nav {
+    overflow: hidden;
+    background-color:none;
+  }
+
+  .flex-list {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 0 0;
+  }
+
+  .logo {
+    padding: 10px 10px 10px 20px;
+  }
+  
+  .nav-item a {
+  
+    color: #C28E2B;
+    text-align: center;
+    padding: 0 15px 0 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav-item a:hover {
+    color:white;
+  }
+
+  .mobile-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: #C28E2B;
+    border-radius: 20px;
+    stroke: 5px;   
+  }
+
+  .mobile-content-container:hover {
+    color: #C28E2B;
+  }
+
+  .mobile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  .mobile-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .mobile-card {
+    padding: 20px;
+    max-width: 428px;
+    max-height: 350px;
+  }
+
+  .mobile-image {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .mobile-text-container {
+    padding: 10px;
+    max-width: 600px;
+  }
+
+  .mobile-title {
+    color: #C28E2B;
+  }
+
+  .mobile-text {
+    color: white;
+    font-size: 25px;
+  }
+
+
+  .footer-container {
+    background-color: #C28E2B;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .footer-arrow {
+    width: 95px;
+    height: 25px;
+    padding: 0 0 0 20px;
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
+    padding: 0 0 0 20px;
+  }
+
+  .footer-text {
+    color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    .mobile-container {
+        flex-direction: column;
+    }
+}
