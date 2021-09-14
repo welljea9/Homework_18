@@ -34,11 +34,17 @@ body {
     padding: 0 15px 0 15px;
     text-decoration: none;
     font-size: 17px;
+    cursor: pointer;
   }
+  
   
   .nav-item a:hover {
     color:white;
   }
+
+  ul.flex-list {
+    list-style-type: none;
+}
 
   .mobile-content-container {
     display: flex;
@@ -131,6 +137,21 @@ body {
 
   .footer-text {
     color: white;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  section {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
   }
 
   @media screen and (max-width: 768px) {
